@@ -20,7 +20,7 @@
  
 body {
 	align-items: center;
-	background-color: var(--white);
+	background-color: transparent;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -44,7 +44,6 @@ body {
 }
  
 .container {
-	background-color: var(--white);
 	border-radius: var(--button-radius);
 	box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
 		0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
@@ -53,6 +52,7 @@ body {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+    z-index: 120;
 }
  
 .container_form {
@@ -286,7 +286,6 @@ body {
     opacity: 1;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    
 }
  
 .slidershow--image:nth-child(1) {
