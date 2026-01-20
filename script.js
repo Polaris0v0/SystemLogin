@@ -89,7 +89,7 @@ function validateInputs(username, password){
         }
     }
     else if(username == '北辰0v0'){
-        if(hash == '40d2fc87ff07970051ebb36a24737570'){
+        if(hash == '4bf8b8af8ee5a1ce83bf29f225189860'){
             clearError();
             document.title = "正在跳转..."
             window.location.href = "https://polaris0v0.github.io/WebNavigation/";
@@ -115,7 +115,7 @@ function validateInputs(username, password){
         }
     }
 
-    
+
     // ...添加更多用户数据...
 
 
