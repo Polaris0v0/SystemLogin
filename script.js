@@ -114,8 +114,21 @@ function validateInputs(username, password){
             return false;
         }
     }
-    else if(username == '3613285011'){
+    else if(username == '劳哈大王'){
         if(hash == 'ded6a1ba99fefd99078fbd22f773c99d'){
+            clearError();
+            document.title = "正在跳转..."
+            window.location.href = "https://polaris0v0.github.io/WebNavigation/";
+            return true;
+        }
+        else{
+            alert('密码错误');
+            passwordInput.focus();
+            return false;
+        }
+    }
+    else if(username == '音子大王'){
+        if(hash == '989df936eda3f79332b7e671ef45949b'){
             clearError();
             document.title = "正在跳转..."
             window.location.href = "https://polaris0v0.github.io/WebNavigation/";
