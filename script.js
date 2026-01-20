@@ -20,18 +20,17 @@ const loginBtn = document.getElementById('loginBtn');
 const usernameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 const resultDiv = document.getElementById('result');
+const findpwback = document.getElementById('findpwback');
+const aboutauthor = document.getElementById('aboutauthor')
 
+findpwback.addEventListener("click", () => {
+    findpwback.innerHTML = '<a href="#" class="link" style="color:rgb(170, 83, 83)" id="findpwback">牛魔的 自己的密码自己找</a>'
+})
 
-if (!loginBtn) {
-    console.error("登录按钮元素未找到");
-} else {
-    loginBtn.addEventListener("click", function(event){
-        event.preventDefault();
-        console.log("登录按钮被点击");
-        handleLogin();
-    });
-}
-
+aboutauthor.addEventListener("click", () => {
+    document.title = "正在跳转..."
+    window.location.href = "https://www.douyin.com/user/MS4wLjABAAAAn6IsTfv31-i53LhMuK9Vis9hqg4L6eAXz-rxhirXGBM?from_tab_name=main";
+})
 
 function handleLogin(){
     console.log("handleLogin 函数被调用");
