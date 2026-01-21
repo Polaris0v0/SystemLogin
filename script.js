@@ -32,6 +32,16 @@ aboutauthor.addEventListener("click", () => {
     window.location.href = "https://www.douyin.com/user/MS4wLjABAAAAn6IsTfv31-i53LhMuK9Vis9hqg4L6eAXz-rxhirXGBM?from_tab_name=main";
 })
 
+if (!loginBtn) {
+    console.error("登录按钮元素未找到");
+} else {
+    loginBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        console.log("登录按钮被点击");
+        handleLogin();
+    });
+}
+
 function handleLogin(){
     console.log("handleLogin 函数被调用");
     // 读取输入值
