@@ -22,14 +22,21 @@ const passwordInput = document.getElementById('password');
 const resultDiv = document.getElementById('result');
 const findpwback = document.getElementById('findpwback');
 const aboutauthor = document.getElementById('aboutauthor')
+var clickcount = 0;
 
 findpwback.addEventListener("click", () => {
-    findpwback.innerHTML = '<a href="#" class="link" style="color:rgb(170, 83, 83)" id="findpwback">牛魔的 自己的密码自己找</a>'
+    clickcount++;
+    if(clickcount%2){
+        findpwback.innerHTML = '<a href="#" class="link" style="color:rgb(170, 83, 83)" id="findpwback">牛魔的 自己的密码自己找</a>'
+    }
+    else{
+        findpwback.innerHTML = '<a href="#" class="link" style="color:rgb(170, 83, 83)" id="findpwback">没有帮忙找回密码的义务</a>'
+    }
 })
 
 aboutauthor.addEventListener("click", () => {
     document.title = "正在跳转..."
-    window.location.href = "https://www.douyin.com/user/MS4wLjABAAAAn6IsTfv31-i53LhMuK9Vis9hqg4L6eAXz-rxhirXGBM?from_tab_name=main";
+    window.open("https://www.douyin.com/user/MS4wLjABAAAAn6IsTfv31-i53LhMuK9Vis9hqg4L6eAXz-rxhirXGBM?from_tab_name=main", "_blank");
 })
 
 if (!loginBtn) {
@@ -151,7 +158,7 @@ function validateInputs(username, password){
     }
 
 
-    // ...添加更多用户数据...
+    /* ...添加更多用户数据...  */
 
 
     else{
